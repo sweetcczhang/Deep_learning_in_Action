@@ -141,7 +141,7 @@ class ConvolutionNetwork(object):
         :param feature_x:
         :return:
         """
-        feed_dict = {self.x: self.feed_dict,
+        feed_dict = {self.x: feature_x,
                      self.keep_prob: 1.0}
 
         predicts=self.sess.run(self.predict, feed_dict=feed_dict)
